@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none;
+    font-family:poppins;
+}
+/* navbar section start  */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem;
+}
+.logo img{
+    width:10rem;
+}
+nav ul{
+    display:flex;
+    align-items:center;
+}
+nav ul li{
+    margin:0rem 1rem;
+}
+nav ul li a{
+    font-size:.9rem;
+    font-weight:500;
+    color:black;
+    transition:all 0.4s ease;
+}
+nav ul li a:hover{
+    color:rgba(0, 0, 0, 0.6);
+} 
+.log-in{
+    display:flex;
+    font-weight:600;
+    gap:1rem;
+    cursor:pointer;
+}
+.sign-up{
+    background-color:#54B8FF;
+    color:white;cursor:pointer;
+}
+.log-in input{
+    border:none;
+    padding:.3rem 1.5rem;cursor:pointer;
+}
+.menu-btn i{
+    font-size:1.3rem;
+    margin-left:5.5rem;
+    border:1px solid rgba(0, 0, 0, 0.285);
+    padding:.5rem;
+    border-radius:50%;
+    cursor:pointer;
+    display:none;
+}
+#click{
+    display:none;
+}
+/* navbar section end */
+/* header banner section start  */
+.header-banner-container{
+    max-width: 900px;
+    display:flex;
+    margin:1rem auto;
+}
+.header-banner-text{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+.header-banner-text p{
+    font-size:.8rem;
+    color:#2F2B71;
+    font-weight:500;
+}
+.header-banner-text h1{
+    font-size:2.5rem;
+    color:#5F596E;
+    font-weight:700;
+}
+.header-banner-text h4{
+    color:#5F596E;
+    font-weight:500;
+    font-size:1rem;
+}
+.header-banner-text button{
+    background: linear-gradient(90deg, #54B8FF -1.36%, #54B8FF 105.62%);
+    padding:.5rem .8rem;
+    border:none;
+    font-weight:600;
+    color:white;
+    width:max-content;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:.8rem;
+}
+.obj1{
+    position:relative;
+    top:10rem;
+}
+.obj2{
+    position:relative;
+    top:5rem;
+    right:2rem;
+}
+.obj3{
+    position:relative;
+    top:1rem;
+}
+.obj4{
+    position:relative;
+    top:3rem;
+    left:3rem;
+}
+.obj5{
+    position:relative;
+    top:9rem;
+    left:2rem;
+}
+.header-banner-image .obj1,.obj2,.obj3,.obj4,.obj5{
+    width:3.5rem;
+}
+.header-banner-1{
+    width:20rem;
+}
+.side-obj1{
+    position:absolute;
+    top:3rem;
+}
+.side-obj2{
+    position:absolute;
+    right:0;
+    bottom:2rem;
+    width:3rem;
+}
+.side-obj3{
+    position:absolute;
+    right:0;
+    top:10rem;
+    width:1.5rem;
+}
+.side-obj4{
+    position:absolute;
+    left:0;
+    bottom:2rem;
+    width:5rem;
+}
+.group-container{
+    display:flex;
+    position:absolute;
+    bottom:0;
+    left:15rem;
+    margin:0rem auto;
+    opacity:.6;
+}
+.group-image-3{
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    gap:1rem;
+    position:absolute;
+    right:13.5rem;
+    bottom:11rem;
+}
+.group-image-3 img{
+    width:3rem;
+}
+/* header banner section end */
+/* responsive design mobile approaches start   */
+@media screen and (max-width: 992px){
+    nav ul{
+        position:fixed;
+        top:6rem;
+        left:-100%;
+        width:100%;
+        height:50vh;
+        background-color:rgb(0, 0, 0);
+        display:block;
+        text-align:center;
+        transition:all .4s ease;
+    }
+    nav ul li{
+        /* display:block; */
+        margin-top:1.5rem;
+    }
+    nav ul li a{
+        color:white;
+        font-size:1.2rem;
+    }
+    nav ul li a:hover{
+        color:rgba(255, 255, 255, 0.618);
+    }
+    .log-in{
+        display:none;
+    }
+    .menu-btn i{
+        display:block;
+        position:absolute;
+        right:1rem;
+        top:auto;
+    }
+    #click:checked ~ ul{
+        left:0%;
+    }
+    .header-banner-container{
+        flex-direction:column;
+        margin:1rem auto;
+        width:90%;
+        gap:1rem;
+    }
+    .header-banner-image{
+        margin:0rem auto;
+    }
+    .side-object-container{
+        display:none;
+    }
+    .group-container{
+        display:none;
+    }
+    .group-image-3{
+        display:none;
+    }
+}
+/* responsive design mobile approaches end */
