@@ -332,6 +332,139 @@ nav ul li a:hover{
     border-radius:.5rem;
 }
 /* section 1 end */
+/* section 2 start  */
+.section-2{
+    width:100%;
+    height:80vh;
+}
+.section-2-container{
+    max-width:900px;
+    display:flex;
+    margin:5rem auto;
+    gap:2rem;
+    justify-content:center;
+}
+.section-2-text{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    text-align:center;
+}
+.section-2-text img{
+    width:max-content;
+    margin:0rem auto;
+}
+.section-2-text h3{
+    font-size:1.2rem;
+    font-weight:500;
+    color:#1E1E1E;
+}
+.section-2-text p{
+    font-size:.7rem;
+    font-weight:500;
+    color:#1E1E1E;
+}
+.side-object-1{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:90rem;
+    left:0;
+}
+.side-object-1 img{
+    width:max-content;
+}
+.side-object-2{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:90rem;
+    right:0;
+}
+.side-object-2 img{
+    width:4rem;
+}
+.side-object-3{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:118rem;
+    right:0;
+}
+.side-object-3 img{
+    width:max-content;
+}
+.side-object-4{
+    position:absolute;
+    top:116rem;
+    left:0;
+}
+.side-object-4 img{
+    width:4rem;
+}
+/* section 2 end */
+/* section 3 start  */
+.section-3-header{
+    max-width:900px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    margin:0rem auto;
+    gap:.5rem;
+}
+.section-3-header h1{
+    font-weight:600;
+    font-size:1.5rem;
+}
+.section-3-header p{
+    color:#BDBDBD;
+    font-size:.8rem;
+}
+.section-3-container{
+    max-width:900px;
+    margin:5rem auto;
+    display:flex;
+    gap:1rem;
+}
+.section-3-image{
+    margin:0rem auto;
+    display:flex;
+    flex-direction:column;
+    gap:.6rem;
+    box-shadow:2px 2px 10px rgba(128, 128, 128, 0.086);
+    padding:2rem 1rem;
+    border-radius:.8rem;
+}
+.section-3-image img{
+    width:15rem;
+}
+.section-3-image h6{
+    font-size:.8rem;
+}
+.section-3-image p{
+    font-size:.7rem;
+    color:#878787;
+}
+.section-3-subtext-container{
+    display:flex;
+    gap:1.5rem;
+}
+.section-3-subtext-container h6{
+    font-size:.7rem;
+    font-size:400;
+}
+.side-obj-8{
+    position:relative;
+    bottom:15rem;
+    width:1.5rem;
+}
+.side-obj-9{
+    position:absolute;
+    right:0;
+    top:153rem;
+    width:2.5rem;
+}
+/* section 3 end */
 /* responsive design mobile approaches start   */
 @media screen and (max-width: 992px){
     nav ul{
@@ -428,6 +561,30 @@ nav ul li a:hover{
     }
     .section-1-text button{
         margin-bottom:.5rem;
+    }
+    .side-object-1,.side-object-2,.side-object-3,.side-object-4{
+        display:none;
+    }
+    .section-2-container{
+        flex-direction:column;
+        gap:3rem;
+        margin:5rem auto;
+    }
+    .section-3-container{
+        margin:0rem auto;
+        flex-direction:column;
+        gap:1.5rem;
+    }
+    .section-3-image{
+        width:auto;
+        margin:0rem auto;
+    }
+    .section-3-header{
+        margin:5rem auto;
+        width:90%;
+    }
+    .section-3-side-object{
+        display:none;
     }
 }
 /* responsive design mobile approaches end */
