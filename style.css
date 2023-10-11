@@ -168,6 +168,170 @@ nav ul li a:hover{
     width:3rem;
 }
 /* header banner section end */
+/* section 1 start  */
+.section-1-container{
+    max-width:900px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    gap:1.5rem;
+    margin:0rem auto;
+}
+.section-1-image-1{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.334);
+    width:max-content;
+    padding:.6rem 1rem;
+    border-radius:.8rem;
+    z-index:5;
+    position:relative;
+    top:12rem;
+    right:7rem;
+    background-color:whitesmoke;
+}
+.section-1-image-1 img{
+    width:2rem;
+}
+.section-1-image-1 h6{
+    font-size:.6rem;
+}
+.section-1-image-1 p{
+    font-size:.6rem;
+}
+.section-1-image-2{
+    width:max-content;
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.334);
+    padding:1rem 3rem;
+    border-radius:.8rem;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    text-align:center;
+    position:relative;
+    width:90%;
+    background-color:whitesmoke;
+    z-index:4;
+    transition:all 0.4s ease;
+}
+.section-1-image-text-2{
+    display:flex;
+    gap:1rem;
+    margin:0rem auto;
+    padding:rem;
+}
+.section-1-image-2 img{
+    width:7rem;
+    margin:0rem auto;
+}
+.thirty{
+    background-color:#FFF3D4;
+    padding:.5rem 1rem;
+    border-radius:.5rem;
+    color:#FAB408;
+}
+.seventy{
+    background-color:#DCFFEE;
+    padding:.5rem 1rem;
+    border-radius:.5rem;
+    color:#19BF6F;
+}
+.section-1-image-text-2 h1{
+    font-weight:500;
+    font-size:1rem;
+}
+.section-1-image-text-2 p{
+    font-weight:500;
+    font-size:.8rem;
+}
+.section-1-image-text-3{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.334);
+    padding:2rem;
+    border-radius:.8rem;
+    position:relative;
+    margin-top:1rem;
+    width:90%;
+    background-color:whitesmoke;
+    position:relative;
+    bottom:8rem;
+    left:5rem;
+    transition:all 0.4s ease;
+}
+.section-1-image-text-3:hover{
+    z-index:7;
+}
+.section-1-image-text-3 h6{
+    font-size:.7rem;
+    color:#FF733B;
+    font-weight:500;
+}
+.section-1-image-text-3 h3{
+    color:#04004D;
+    font-weight:500;
+    font-size:1rem;
+}
+.section-1-image-text-3 p{
+    color:#898E92;
+    font-size:.8rem;
+}
+.section-1-image-text-container-1{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    gap:1rem;
+}
+.section-1-image-text-container-1 h4{
+    font-weight:500;
+    color:#898E92;
+    font-size:.8rem;
+}
+.section-1-image-text-container-1 button{
+    background-color:#19BF6F;
+    padding:.5rem .8rem;
+    border:none;
+    font-weight:600;
+    color:white;
+    width:max-content;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:.8rem;
+    border-radius:.5rem;
+    font-size:.5rem;
+}
+.section-1-text{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+.section-1-text h1{
+    color:#04004D;
+    font-size:2rem;
+    font-size:700;
+}
+.section-1-text p{
+    font-size:.8rem;
+    color:#336C61;
+    width:20rem;
+}
+.section-1-text button{
+    background-color:#19BF6F;
+    padding:.5rem .8rem;
+    border:none;
+    font-weight:600;
+    color:white;
+    width:max-content;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:.8rem;
+    border-radius:.5rem;
+}
+/* section 1 end */
 /* responsive design mobile approaches start   */
 @media screen and (max-width: 992px){
     nav ul{
@@ -221,6 +385,49 @@ nav ul li a:hover{
     }
     .group-image-3{
         display:none;
+    }
+    .section-1-container{
+        flex-direction:column;
+        gap:2rem;
+    }
+    .section-1-image-1{
+        position:relative;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        margin:0rem auto;
+    }
+    .section-1-image-2{
+        width:90%;
+        position:relative;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        margin:2rem auto;
+    }
+    .section-1-image-text-3{
+        width:90%;
+        position:relative;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0rem;
+        margin:0rem auto;
+    }
+    .section-1-text{
+        width:90%;
+    }
+    .section-1-text h1{
+        font-size:1.5rem;
+    }
+    .section-1-text p{
+        font-size:.6rem;
+        width:100%;
+    }
+    .section-1-text button{
+        margin-bottom:.5rem;
     }
 }
 /* responsive design mobile approaches end */
