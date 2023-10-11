@@ -594,6 +594,45 @@ nav ul li a:hover{
     right:5rem;
 }
 /* section 5 end */
+/* footer section start  */
+hr{
+    margin:2rem auto;
+    color:#7a7a7e3a;
+    display:none;
+}
+.footer-container{
+    display:flex;
+    max-width:900px;
+    margin:0rem auto;
+    justify-content:space-between;
+    
+}
+.footer-text-1 h6{
+    font-size:1rem;
+}
+.footer-text-1 ul li{
+    font-size:.8rem;
+    color:#7A7A7E;
+    line-height:3rem;
+    cursor:pointer;
+}
+.footer-text-4 h6{
+    display:flex;
+    font-size:1rem;
+    justify-content: space-between;
+    cursor:pointer;
+}
+.footer-text-4 img{
+    width:20rem;
+    margin:1rem auto;
+    cursor:pointer;
+}
+.copyright{
+    font-size:.8rem;
+    text-align:center;
+    margin-top:.5rem;
+}
+/* footer section end */
 /* responsive design mobile approaches start   */
 @media screen and (max-width: 992px){
     nav ul{
@@ -762,6 +801,37 @@ nav ul li a:hover{
         margin:1rem auto;
         right:0;
         left:0;
+    }
+    hr{
+        display:block;
+        margin:2rem auto;
+    }
+    .footer-container{
+        flex-direction:column;
+
+    }
+    .footer-text-1{
+        text-align:center;
+        line-height:3rem;
+    }
+    .footer-text-1 h6{
+        font-size:1rem;
+    }
+    .footer-text-4{
+        justify-content:center;
+        align-items:center;
+    }
+    .footer-text-4 h6{
+        justify-content:center;
+        align-items:center;
+        gap:2rem;
+        font-size:1rem;
+    }
+    .footer-text-4 img{
+        margin:1rem auto;
+        width:90%;
+        display:flex;
+        justify-content:center;
     }
 }
 /* responsive design mobile approaches end */
